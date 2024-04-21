@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TestPlayer3 : MonoBehaviour
+public class Day4Player : MonoBehaviour
 {
     private int _playerHealth = 100;
     // a easier way to declare getter & setter

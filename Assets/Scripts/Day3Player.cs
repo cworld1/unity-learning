@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TestPlayer2 : MonoBehaviour
+public class Day3Player : MonoBehaviour
 {
     private Rigidbody2D _rb;
 
@@ -24,6 +24,10 @@ public class TestPlayer2 : MonoBehaviour
         // gameObject.transform.position = _playerPosition;
         _rb = gameObject.GetComponent<Rigidbody2D>();
         _rb.gravityScale = 0;
+        Debug.Log(_playerHealth);
+        Debug.Log(_playerSpeed);
+        Debug.Log(_isGrounded);
+        Debug.Log(_playerName);
     }
 
     // Update is called once per frame
