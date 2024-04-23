@@ -28,7 +28,9 @@ Open with Unity Hub:
 
 To spend more time coding and less time fiddling with whitespace, this project uses code conventions and styles to encourage consistency. Code with a consistent style is easier (and less error-prone!) to review, maintain, and understand.
 
-<!-- ## Thanks -->
+## Thanks
+
+- [Unity for Beginners!](https://www.youtube.com/playlist?list=PL0eyrZgxdwhwQZ9zPUC7TnJ-S0KxqGlrN)
 
 ## License
 
