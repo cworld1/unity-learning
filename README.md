@@ -1,4 +1,4 @@
-# Novel Analysis
+# Unity Learning
 
 [![GitHub stars](https://img.shields.io/github/stars/cworld1/unity-learning?style=flat-square)](https://github.com/cworld1/unity-learning/stargazers)
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/y/cworld1/unity-learning?label=commits&style=flat-square)](https://github.com/cworld1/unity-learning/commits)
@@ -10,7 +10,7 @@ Some notes and code about CWorld learning Unity.
 
 Environment requirements:
 
-- [Unity](https://unity.com/): 2022+
+- [Unity](https://unity.com/): 2023+
 
 Clone the repository:
 
