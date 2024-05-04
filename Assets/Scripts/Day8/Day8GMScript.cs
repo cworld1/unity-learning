@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TestScript : MonoBehaviour
+public class Day8GMScript : MonoBehaviour
 {
     [SerializeField] GameObject _item;
 
@@ -46,8 +46,7 @@ public class TestScript : MonoBehaviour
 
     Color HexToColor(string hex)
     {
-        Color color = Color.white;
-        ColorUtility.TryParseHtmlString(hex, out color); // 将十六进制颜色字符串转换为 Color 类型
+        ColorUtility.TryParseHtmlString(hex, out Color color); // Convert hexadecimal color strings to Color type
         return color;
     }
 }
