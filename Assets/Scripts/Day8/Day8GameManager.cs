@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Day8GMScript : MonoBehaviour
+public class Day8GameManager : MonoBehaviour
 {
     [SerializeField] GameObject _item;
 

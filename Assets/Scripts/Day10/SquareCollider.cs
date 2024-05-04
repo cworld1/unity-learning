@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TestScript01 : MonoBehaviour
+public class SquareCollider : MonoBehaviour
 {
     BoxCollider2D _col;
 

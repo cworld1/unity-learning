@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TestScript02 : MonoBehaviour
+public class Day10GameManager : MonoBehaviour
 {
     [SerializeField] GameObject _squareParent;
     [SerializeField] GameObject _square;
