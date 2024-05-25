@@ -1,7 +1,7 @@
 # Unity Learning
 
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/t/cworld1/unity-learning?label=commits&style=flat-square)](https://github.com/cworld1/unity-learning/commits)
 [![GitHub stars](https://img.shields.io/github/stars/cworld1/unity-learning?style=flat-square)](https://github.com/cworld1/unity-learning/stargazers)
-[![GitHub commit activity](https://img.shields.io/github/commit-activity/y/cworld1/unity-learning?label=commits&style=flat-square)](https://github.com/cworld1/unity-learning/commits)
 [![GitHub license](https://img.shields.io/github/license/cworld1/unity-learning?style=flat-square)](https://github.com/cworld1/unity-learning/blob/main/LICENSE)
 
 Some notes and code about CWorld learning Unity.
