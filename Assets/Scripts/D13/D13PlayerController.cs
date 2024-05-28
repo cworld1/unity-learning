@@ -8,7 +8,7 @@ public class D13PlayerController : MonoBehaviour
     Rigidbody2D _rb;
     float _inputHorizontal;
     float _moveSpeed = 10f;
-    Vector2 _currentVilocity;
+    Vector2 _currentVelocity;
 
     // Move using transform
     float _moveSpeedTransform = 10f;
@@ -25,7 +25,7 @@ public class D13PlayerController : MonoBehaviour
     {
         // Move using RigidBody
         _inputHorizontal = Input.GetAxisRaw("Horizontal");
-        _currentVilocity = new Vector2(_inputHorizontal * _moveSpeed, 0f);
+        _currentVelocity = new Vector2(_inputHorizontal * _moveSpeed, 0f);
 
         // MovePlayerTransform();
     }
@@ -55,12 +55,12 @@ public class D13PlayerController : MonoBehaviour
     {
         if (_inputHorizontal != 0)
         {
-            _rb.velocity = _currentVilocity;
+            _rb.velocity = _currentVelocity;
         }
         else
         {
-            _currentVilocity = new Vector2(0f, 0f);
-            _rb.velocity = _currentVilocity;
+            _currentVelocity = new Vector2(0f, 0f);
+            _rb.velocity = _currentVelocity;
         }
     }
 }
