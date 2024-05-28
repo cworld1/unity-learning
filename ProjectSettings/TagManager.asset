@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Ground
   - Object
+  - Ball
+  - Light
   layers:
   - Default
   - TransparentFX
