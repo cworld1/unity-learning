@@ -6,7 +6,11 @@
 
 Some notes and code about CWorld learning Unity.
 
-## Local Development
+## Project structure
+
+The file/folder name which contains "D" means "Day", and corresponding to each segment of the appendix tutorial video.
+
+## Local development
 
 Environment requirements:
 
@@ -23,6 +27,7 @@ Open with Unity Hub:
 - Go to `Projects`
 - Click `Add`
 - Choose the peoject folder
+- Click `Play` (or use `Ctrl + P`)
 
 ## Contributions
 
