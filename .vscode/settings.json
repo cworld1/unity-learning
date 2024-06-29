@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "test2d.sln"
+    "dotnet.defaultSolution": "learning.sln"
 }
