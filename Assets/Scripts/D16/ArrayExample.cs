@@ -3,7 +3,7 @@ using UnityEngine;
 public class ArrayExample : MonoBehaviour
 {
     // Example 1
-    int _number = 12;
+    // int _number = 12;
     int[] _numberArray = new int[4];
 
     // Example 2
