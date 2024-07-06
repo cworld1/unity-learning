@@ -54,7 +54,7 @@ public class D17PlayerController : MonoBehaviour
 
         if (_isShooting)
         {
-            // StartCoroutine(Fire());
+            StartCoroutine(Fire());
         }
     }
 
@@ -83,16 +83,19 @@ public class D17PlayerController : MonoBehaviour
         _offset = new Vector2(_mousePos.x - screenPoint.x, _mousePos.y - screenPoint.y).normalized;
         // Debug.Log(_offset);
 
-        float angle = Mathf.Atan2(_offset.x, _offset.y) * Mathf.Rad2Deg;
+        float angle = Mathf.Atan2(_offset.y, _offset.x) * Mathf.Rad2Deg;
 
         gameObject.transform.rotation = Quaternion.Euler(0f, 0f, angle - 90f);
         // Minusing the 90f degress to ensure the head towards you, but not the x axis
     }
 
-    // IEnumerator Fire()
-    // {
-    //     _isShooting = false;
+    IEnumerator Fire()
+    {
+        _isShooting = false;
+        GameObject bullet = Instantiate(_bullet, _bulletSpawn.transform.position, Quaternion.identity);
+        bullet.GetComponent<Rigidbody2D>().velocity = _offset * _bulletSpeed;
 
-    //     GameObject bullet = Instantiate(_bullet, _bulletSpawn.transform.position, Quaternion.identity);
-    // }
+        yield return new WaitForSeconds(3);
+        Destroy(bullet);
+    }
 }
