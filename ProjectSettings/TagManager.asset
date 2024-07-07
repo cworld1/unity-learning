@@ -9,6 +9,7 @@ TagManager:
   - Ball
   - Light
   - Enemy
+  - Bullet
   layers:
   - Default
   - TransparentFX
