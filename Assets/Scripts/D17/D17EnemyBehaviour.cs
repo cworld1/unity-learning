@@ -6,6 +6,7 @@ public class D17EnemyBehaviour : MonoBehaviour
 {
     // [SerializeField] D17GameManager _gameManager;
     D17GameManager _gameManager;
+    D17ScoreManager _scoreManager;
     GameObject _player;
 
     float _enemytHealth = 100f;
@@ -19,6 +20,7 @@ public class D17EnemyBehaviour : MonoBehaviour
     {
         // The slowest way to get
         _gameManager = GameObject.Find("GameManager").GetComponent<D17GameManager>();
+        _scoreManager = GameObject.Find("Canvas").GetComponent<D17ScoreManager>();
         _player = GameObject.FindWithTag("Player");
     }
 
@@ -57,19 +59,22 @@ public class D17EnemyBehaviour : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.tag == "Bullet")
+        if (other.gameObject.CompareTag("Bullet"))
         {
             StartCoroutine(Damaged());
             _enemytHealth -= 40f;
 
             // Destroy enemy itself if need
             if (_enemytHealth <= 0f)
+            {
+                _scoreManager.score += 1f;
                 Destroy(gameObject);
+            }
 
             // Destroy the bullet
             Destroy(other.gameObject);
         }
-        else if (other.gameObject.tag == "Player")
+        else if (other.gameObject.CompareTag("Player"))
         {
             _gameManager._gameOver = true;
             // Only set the player disactive instead of destroying it
